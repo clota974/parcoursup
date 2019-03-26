@@ -1,0 +1,232 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  transition: background .3s ease;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gill", "Helvetica", "Roboto";
+
+  background: #00BCD4;
+  overflow: hidden;
+}
+
+div.backface{
+  display: none;
+}
+
+header{
+  width: 100%;
+  height: 15%;
+
+  background: rgba(255, 255, 255, 0.8);
+  vertical-align: center;
+}
+header table{
+  width: 100%;
+  height: 100%;
+
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  box-sizing: border-box;
+}
+header td{
+  padding: 1%;
+}
+header td h1{
+  font-weight: 100;
+  font-size: 220%;
+}
+header table td:nth-child(1){
+  text-align: left;
+}
+header table td:nth-child(2){
+  text-align: center;
+
+  text-transform: uppercase;
+  font-size: 170%;
+  font-weight: 200;
+}
+header table td:nth-child(3){
+  text-align: right;
+  font-size: 120%;
+}
+h1{
+  display: inline-block;
+  margin: 0;
+}
+div.questNbrContainer{
+  text-align: center;
+}
+
+div.interface{
+  height: 90%;
+}
+
+div.question{
+  display: table;
+  height: 35%;
+  width: 100%;
+
+  text-align: center;
+  font-size: 200%;
+  vertical-align: middle;
+
+  /*background: rgba(255, 255, 0, 0.5);*/
+}
+div.question span{
+  display: table-cell;
+
+  color: white;
+  vertical-align: middle;
+}
+table.answers{
+  height: 50%;
+  width: 100%;
+
+
+  text-align: left;
+  color: #ecf0f1;
+
+  /*background: rgba(255, 255, 0, 0.5);*/
+  /*table-layout: fixed;*/
+}
+table.answers tr{
+  height: 60px;
+}
+table.answers tr[id] td:first-child{
+  text-align: right;
+  width: 42%;
+
+  line-height: 10px;
+}
+table.answers tr[id] td:last-child{
+  padding-left: 2%;
+
+  text-align: left;
+  font-size: 40px;
+
+  line-height: 60px;
+}
+table.answers tr:not([id]){
+  width: 100%;
+}
+table.answers tr:not([id]) td{
+  position: absolute;
+
+  height: 60px;
+  width: 100%;
+  padding-top: 2%;
+
+  text-align: center;
+}
+table.answers tr:not([id]) td button{
+  transition: background .3s ease, opacity .3s ease;
+
+  padding: 13px;
+
+  font-size: 200%;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: white;
+
+  cursor: pointer;
+  background: #3F51B5;
+  border: none;
+  outline: none;
+}
+button#next:hover, button#next:active, button#next:focus{
+  background: #C5CAE9;
+}
+button#next:disabled{
+  opacity: 0 !important;
+}
+
+svg{
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+  /*background: orange;*/
+}
+circle.backCircle{
+  cx: 50%;
+  cy: 50%;
+  r: 40%;
+  fill: #ecf0f1;
+}
+circle.checkedCircle{
+  transition: r .3s ease, opacity .3s ease, fill .3s ease;
+
+  cx: 50%;
+  cy: 50%;
+  r: 0%;
+  fill: #536DFE;
+  opacity: 1;
+
+  /*animation: aaa 1s ease 0s infinite alternate paused;*/
+
+}
+circle.outline{
+  transition: stroke .3s ease;
+
+  cx: 50%;
+  cy: 50%;
+  r: 48%;
+  fill: transparent;
+  stroke: #ecf0f1;
+  stroke-width: 5%;
+}
+svg[data-checked=false]:hover circle.checkedCircle{
+  opacity: 1;
+  r: 25%;
+  /*animation-play-state: running;*/
+}
+svg[data-checked=true] circle.checkedCircle, svg[data-choose] .checkedCircle{
+  /*animation: none;*/
+
+  r: 40%;
+
+  opacity: 1;
+}
+svg[data-checked=true] circle.outline{
+  stroke: #536DFE;
+}
+svg[data-choose=correct] circle.checkedCircle{
+  fill: #4CAF50;
+}
+svg[data-choose=correct] circle.outline{
+  stroke: #4CAF50;
+}
+svg[data-choose=chosen] circle.checkedCircle{
+  fill: #FFEB3B;
+}
+svg[data-choose=chosen] circle.outline{
+  stroke: #FFEB3B;
+}
+svg[data-choose=wrong] circle.checkedCircle{
+  fill: #FF5252;
+}
+svg[data-choose=wrong] circle.outline{
+  stroke: #FF5252;
+}
+svg[data-choose=correction] circle.checkedCircle{
+  fill: #4CAF50;
+  animation: correctionFrame 1s ease 0s infinite alternate;
+}
+svg[data-choose=correction] circle.outline{
+  stroke: #4CAF50;
+}
+@keyframes correctionFrame{
+  0%{
+    r: 7%;
+  }
+  100%{
+    r: 35%;
+  }
+}

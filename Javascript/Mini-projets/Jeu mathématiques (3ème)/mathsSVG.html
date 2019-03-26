@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+    $(document).ready(function(){
+      $(".svg").attr("data-checked", "false");
+      $(".svg").attr("onclick", "check(this)");
+    });
+      function check(obj){
+        $(obj).siblings().attr("data-checked", "false");
+        $(obj).attr("data-checked", "true");
+      }
+    </script>
+    <style media="screen">
+      html, body{
+        padding: 5px;
+      }
+      svg{
+        width: 200px;
+        height: 200px;
+
+        cursor: pointer;
+        /*background: orange;*/
+      }
+      circle.backCircle{
+        cx: 50%;
+        cy: 50%;
+        r: 40%;
+        fill: #ecf0f1;
+      }
+      circle.checkedCircle{
+        transition: r .3s ease, opacity .3s ease;
+
+        cx: 50%;
+        cy: 50%;
+        r: 0%;
+        fill: dodgerblue;
+        opacity: 1;
+
+        /*animation: aaa 1s ease 0s infinite alternate paused;*/
+
+      }
+      circle.outline{
+        transition: stroke .3s ease;
+
+        cx: 50%;
+        cy: 50%;
+        r: 43%;
+        fill: transparent;
+        stroke: #ecf0f1;
+        stroke-width: 3%;
+      }
+      svg[data-checked=false]:hover circle.checkedCircle{
+        opacity: 1;
+        r: 25%;
+        /*animation-play-state: running;*/
+      }
+      svg[data-checked=true] circle.checkedCircle{
+        /*animation: none;*/
+
+        r: 40%;
+
+        opacity: 1;
+      }
+      svg[data-checked=true] circle.checkedCircle{
+        /*animation: none;*/
+
+        r: 40%;
+
+        opacity: 1;
+      }
+      svg[data-checked=true] circle.outline{
+        stroke: dodgerblue;
+      }
+      @keyframes aaa{
+        0%{
+          r: 7%;
+        }
+        100%{
+          r: 35%;
+        }
+      }
+    </style>
+  </head>
+  <body onload="">
+    <svg class="svg">
+      <circle class="backCircle"/>
+      <circle class="checkedCircle"/>
+
+      <circle class="outline" />
+    </svg>
+  </body>
+</html>

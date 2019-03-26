@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta id="theme-color" name="theme-color" content="#00BCD4">
+    <title>I brevet</title>
+    <link rel="stylesheet" href="maths.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <script src="maths.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <header>
+      <table>
+        <tr>
+          <td><h1>Brev-E</h1></td>
+          <td>Question <span class="questNbr" id="questNbr">0</span></td>
+          <td><span class="pts" id="pts">150</span> points</td>
+        </tr>
+      </table>
+    </header>
+    <div class="backface">
+      <audio id="fond" src="question1.mp3" loop preload="auto"></audio>
+      <audio id="correct" src="correct.mp3" preload="auto"></audio>
+      <audio id="select" src="select_answer.mp3" preload="auto"></audio>
+      <audio id="suspense" src="suspense.mp3" preload="auto" loop></audio>
+      <audio id="lose" src="quit.mp3" preload="auto"></audio>
+      <audio id="palier" src="palier.mp3" preload="auto"></audio>
+    </div>
+    <div class="interface">
+      <div class="question"><span id="question">Combien font 2+2 ?</span></div>
+      <table class="answers">
+        <tr id="answ1"><td></td><td>36</td></tr>
+        <tr id="answ2"><td></td><td>33</td></tr>
+        <tr id="answ3"><td></td><td>42</td></tr>
+        <tr id="answ4"><td></td><td>53</td></tr>
+        <tr><td><button id="next" type="button">Valider</button></td></tr>
+      </table>
+    </div>
+  </body>
+</html>
