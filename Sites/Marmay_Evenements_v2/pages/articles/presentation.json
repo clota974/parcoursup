@@ -1,0 +1,32 @@
+[
+  ["page", "Présentation", "/pro/src/fiesta.jpg", "center 40%"],
+  ["texte", "On peut insérer du texte <b>formatté en HTML</b> <i>si on le souhaite</i> <br/>On ne peut pas mettre dans un fichier JSON mais on peut mettre un &lt;br/&gt;"],
+  ["texte", "Regardez bien les animations de la page ;)"],
+  ["image", "/pro/src/aqua_ban.jpg", "Image à taille automatique", "L'image est immédiatement centrée"],
+  ["texte", "On peut créer un roll afin d'afficher uniquement certains éléments"],
+  
+  ["roll", "Je suis un roll"],
+  ["texte", "Il ne faut pas oublier de fermer le roll !"],
+  ["roll-fin"],
+
+  ["roll", "Images à taille variable"],
+  ["texte", "La taille d'une image peut être renseignée en pixels. Si elle n'est pas renseignée, elle sera choisie automatiquement."],
+  ["image", "/pro/src/struct_rond.jpg", "On peut changer la taille de l'image", "Tout en gardant un minimum de 100px", 100],
+  ["roll-fin"],
+  
+  ["roll", "Fiches infos"],
+  ["texte", "On peut aussi mettre des petites fiches infos à la suite les unes des autres"],
+  ["fiche", "/pro/src/aqua_ban.jpg", "/pro/src/structures/arche-a.jpg"],
+  ["roll-fin"],
+
+  ["image", "/pro/src/struct_rond.jpg", "", "", 100],
+  ["image", "/pro/src/struct_rond.jpg", "Voici un titre uniquement", "", 100],
+  ["image", "/pro/src/struct_rond.jpg", "", "Voici un sous-titre uniquement", 100],
+  ["image", "/pro/src/struct_rond.jpg", "Voici un titre", "et là un sous-titre", 100],
+  ["image", "/pro/src/struct_rond.jpg", "Animation du texte", "Le texte s'éclaircit quand on passe le curseur", 100],
+  ["image", "/pro/src/struct_rond.jpg", "Voici une grande image", "Mais progressivement...", 600],
+  ["image", "/pro/src/struct_rond.jpg", "Les éléments apparaissent", "Mais progressivement...", 100],
+  ["fiche", "/pro/src/aqua_ban.jpg", "/pro/src/structures/arche-a.jpg"],
+  ["texte", "Il ne faut pas oublier de dire au logiciel quand c'est terminé. <br/>Par contre, il n'y a pas de virgule à la fin !!!"],
+  ["fin", 1]
+]

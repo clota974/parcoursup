@@ -1,0 +1,118 @@
+section.blog{
+  width: 75%;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+div.news{
+  margin: 20px 25px;
+  overflow: hidden;
+  border-bottom: 2px dotted #FFCB00;
+}
+section.blog h2{
+  margin: 30px;
+  margin-bottom: 0px;
+  font-size: 200%;
+  color: #FFCB00;
+  text-transform: uppercase;
+}
+section.blog .prev{
+  position: relative;
+}
+section.blog .prev video{
+  width: auto;
+  max-width: 70%;
+
+  border: 1px solid #000;
+}
+section.blog .prev img{
+  width: auto;
+  max-width: 70%;
+}
+section.blog .prev:before{
+  position: absolute;
+  content: "";
+  display: block;
+  height: 100px;
+  width: 95%;
+  background: transparent;
+}
+section.blog .content{
+  padding: 25px;
+}
+section.blog h3{
+  transition: background .3s ease, color .3s ease;
+  padding: 10px;
+  margin: 10px;
+
+  color: #FF00AD;
+  font-family: museo;
+  font-size: 170%;
+  display: inline-block;
+  font-weight: 300;
+
+  border: 1px solid #FF00AD;
+}
+section.blog div.news:hover h3{
+  transition: background 0s ease, color 0s ease;
+  background: #FF00AD;
+  color: #FFF;
+}
+
+section.blog p{
+  color: #333;
+  font-size: 120%;
+}
+
+div.news a{
+  padding: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: museo;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0px dashed;
+  border-bottom-width: 2px;
+}
+
+aside{
+  position: relative;
+  float: right;
+  width: 25%;
+  right: 10px;
+  margin-top: 20px;
+
+
+  font-family: museo;
+
+  text-align: right;
+}
+
+aside h1{
+  font-weight: normal;
+  color: white;
+  border-bottom: 1px solid white;
+  text-align: right;
+}
+
+aside div{
+  margin-top: 5px;
+}
+aside h5{
+font-size: 120%;
+
+}
+
+.fb-page{
+  min-height: 100px;
+  width: 100%;
+  background-image: url("/me/src/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.aside--news{
+  padding: 10px;
+  background: #FFCB00;
+  margin-top: 10px;
+}

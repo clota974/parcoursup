@@ -1,0 +1,45 @@
+section{
+  width: 100%;
+  padding: 50px;
+  min-height: 500px;
+  height: 100%;
+  line-height: 2em;
+
+  background: url("../src/sunset_svg.svg") no-repeat;
+  background-size: cover;
+}
+section h2{
+  font-size: 210%;
+  color: #FFF;
+}
+section em{
+  display: block;
+  margin: 25px 0;
+
+  color: #FFF;
+  font-size: 160%;
+  font-style: normal;
+  font-family: "museo";
+}
+section p{
+  background: rgba(255, 255, 255, 0.7);
+  margin: 25px -50px;
+  padding: 20px 50px;
+
+  color: #444;
+  font-size: 130%;
+}
+button{
+  transition: border 200ms ease, background 200ms ease, color 200ms ease;
+
+  font-weight: 300;
+  font-size: 130%;
+  background: #FFCE54;
+  border-color: #FFCE54;
+  color: #333;
+}
+button:hover{
+  color: #FFF;
+  background: #00B2CA;
+  border-color: #00B2CA;
+}

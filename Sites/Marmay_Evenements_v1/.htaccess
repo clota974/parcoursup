@@ -1,0 +1,9 @@
+DirectoryIndex /me/pages/acceuil.php
+
+ErrorDocument 404 /me/pages/404.html
+ErrorDocument 403 /me/pages/404.html
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ /me/pages/$1.php [NC,L]
+

@@ -1,0 +1,178 @@
+div.imgs{
+  text-align: center;
+}
+div.bg-img{
+  display: inline-block;
+  min-width: 200px;
+  min-height: 300px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section.hero-img{
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  -webkit-filter: saturate(200%);
+  -o-filter: saturate(200%);
+  filter: saturate(200%);
+}
+
+section.presta section.fLeft{
+  position: relative;
+  float: left;
+  width: 50%;
+}
+section.presta section.fRight{
+  position: relative;
+  float: right;
+  width: 40%;
+  border-radius: 2px;
+}
+section.fRight:after, section.fRight:before{
+  display: none;
+}
+section.presta{
+  position: relative;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+section.presta div.illustr{
+  transition: border 300ms ease;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 30px;
+  right: 30px;
+  border: 5px solid #F79256;
+  border-color: #E671B8 #E671B8 #F79256 #F79256;
+  border-radius: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.presta div.illustr:hover{
+  border-color: #F79256 #F79256 #E671B8 #E671B8;
+}
+section.presta h1{
+  font-family: "museo", "helvetica";
+  font-size: 190%;
+  color: #F79256;
+  font-weight: 100;
+}
+section.presta p{
+  position: relative;
+  /* float: left; */
+  display: inline-block;;
+  line-height: 25px;
+  color: #444;
+  min-height: 350px;
+  max-width: 60%;
+}
+section.presta ul{
+  padding: 0 25px;
+  line-height: 2em;
+}
+section.presta p br{
+  line-height: 35px;
+}
+section.presta p a{
+  font-family: "museo", "helvetica";
+  color: #00F;
+}
+table.command{
+  border-collapse: collapse;
+  border: 2px solid #F79256;
+  width: 80%;
+  margin: 25px auto;
+}
+table.command thead{
+  background: #F79256;
+  font-family: "museo", "helvetica";
+  color: #FFF;
+  font-size: 120%;
+}
+table.command thead div{
+  color: rgb(257, 226, 166);
+  font-size: 70%;
+}
+table.command td{
+  padding: 20px;
+}
+table.command tr td:first-child{
+  width: 80%;
+}
+table.command tr td:last-child{
+  text-align: center;
+  font-weight: 100;
+}
+table.command tbody tr{
+  border-bottom: 1px solid #EEE;
+  cursor: pointer;
+}
+table.command tbody tr:hover{
+  background: #EFEFEF;
+}
+table.command tbody td:last-child:after{
+  content: "\20AC";
+}
+
+div.noaccess{
+  width: 70%;
+  padding: 25px;
+  margin: 25px auto;
+  text-align: center;
+  background: #FFCB00;
+  border: 5px dashed #FFF;
+}
+label{
+  display: block;
+  font-family: museo;
+  font-weight: bold;
+  color: #FFF;
+}
+.noaccess input{
+  width: 20%;
+  padding: 5px;
+  margin: 10px;
+
+  text-align: center;
+  font-size: 130%;
+  font-family: museo;
+  color: #FFCB00;
+
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+.noaccess button{
+  text-align: center;
+  display: block;
+  margin: 5px auto;
+  color: #FFF;
+  background: transparent;
+  border: 2px solid #FFF;
+  border-radius: 3px;
+}
+
+div.gamme.roll h2{
+  color: #FF00AD;
+}
+div.gamme.roll h2:after{
+  content: "Cliquez pour afficher";
+  margin-left: 10px;
+
+  color: #AAA;
+  font-weight: 100;
+  font-size: 50%;
+}
+div.gamme.roll.open h2:after{
+  content: "Cliquez pour masquer";
+}

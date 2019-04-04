@@ -1,0 +1,117 @@
+section{
+  display: block;
+  position: static;
+  padding: 15px;
+  overflow: hidden;
+}
+section.form{
+  margin-top: 15px;
+  text-align: center;
+}
+section.form p{
+  line-height: 25px;
+}
+h2{
+  color: #F012BE;
+  font-family: "museo", "helvetica";
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 30px;
+  font-weight: 100;
+  font-size: 200%;
+}
+@-moz-document url-prefix() {
+  table.command{
+    border-collapse: collapse;
+    border: 2px solid #F012BE;
+  }
+}
+table.command{
+  border-collapse: collapse;
+  border: 2px solid #F012BE;
+  width: 100%;
+}
+table.command thead{
+  background: #F012BE;
+  font-family: "museo", "helvetica";
+  color: #FFF;
+  font-size: 120%;
+}
+table.command thead div{
+  color: #F012BE;
+  font-size: 70%;
+}
+table.command td{
+  padding: 20px;
+  text-align: center;
+}
+table.command tr td:first-child{
+  width: 60%;
+  text-align: left;
+}
+table.command tr td:nth-child(2){
+  text-align: center;
+  font-weight: 100;
+}
+table.command tbody td:nth-child(2):after{
+  content: "\20AC";
+}
+table.command tbody td.remove{
+  transition: color 200ms ease;
+  color: #00B2CA;
+  font-weight: 100;
+  text-decoration: underline;
+}
+table.command tbody td.remove:hover{
+  color: #0074D9;
+}
+table.command tbody tr{
+  border-bottom: 1px solid #EEE;
+  cursor: pointer;
+}
+table.command tbody tr:hover{
+  background: #EFEFEF;
+}
+
+table.command tfoot tr.add td{
+  padding: 15px 20px;
+  width: 100%;
+
+  color: #AAA;
+  font-size: 90%;
+  text-align: center;
+
+  border-bottom: 1px solid #EEE;
+  cursor: pointer;
+}
+tfoot tr.add td:hover{
+  background: #EFEFEF;
+}
+
+table.command tfoot tr.total{
+  font-family: "museo", "helvetica";
+  font-size: 120%;
+  color: #F012BE;
+}
+table.command tfoot tr.total td{
+  width: 90%;
+  font-weight: bold;
+  text-align: left;
+}
+table.command tfoot tr.total td:last-child{
+  width: 10%;
+  padding-left: 50px;
+
+  text-align: center;
+  font-weight: bold;
+}
+table.command tfoot tr.total td:last-child:after{
+  content: "\20AC";
+}
+
+h3{
+  color: #00B2CA;
+  font-family: "museo", "helvetica";
+  font-weight: 100;
+  font-size: 180%;
+}

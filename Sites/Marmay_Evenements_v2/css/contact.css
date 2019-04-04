@@ -1,0 +1,36 @@
+section{
+  display: block;
+  width: 100%;
+  padding: 30px;
+  overflow: hidden;
+  text-align: center;
+}
+h2{
+  font-family: "museo";
+  color: #F79256;
+}
+body section.form h2{
+  color: #DA4453 !important;
+}
+.infos table{
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.infos td{
+  padding: 10px;
+  padding-left: 0;
+  padding-right: 20px;
+  border: none;
+  font-size: 110%;
+  font-family: museo;
+  text-align: left;
+}
+.infos tr td:first-child{
+  text-align: right;
+}
+.infos tr td:last-child a{
+  color: #00B2CA;
+  font-weight: bold;
+}

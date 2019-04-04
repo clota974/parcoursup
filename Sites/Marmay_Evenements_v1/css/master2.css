@@ -1,0 +1,516 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+	font-family: "helvetica";
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+.museo{
+	font-family: "museo";
+}
+.twt:before{
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+
+  vertical-align: -9px;
+
+  background: url("../src/twitter.png") no-repeat center;
+  background-size: contain;
+}
+.fb:before{
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+
+  vertical-align: -3px;
+
+  background: url("../src/facebook.png") no-repeat center;
+  background-size: contain;
+
+}
+
+div.abs{
+  transition: opacity 100ms ease;
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  background: rgba(33, 33, 33, 0.7);
+  opacity: 0;
+}
+div.abs.active{
+  display: block;
+  opacity: 1;
+}
+div.dialog{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+
+  font-size: 110%;
+
+  background: #01FF70;
+  border-radius: 3px;
+
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+div.dialog h3{
+  font-family: museo, helvetica;
+  font-size: 150%;
+  font-weight: 100;
+  color: #EEE;
+  margin-bottom: 3px;
+}
+div.dialog p{
+  color: #333;
+  font-weight: 100;
+  line-height: 25px;
+}
+div.dialog br{
+  line-height: 40px;
+}
+div.dialog div.btns{
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+
+  text-align: right;
+
+  background: transparent;
+}
+div.dialog div.btns button{
+  height: 100%;
+  padding: 0 15px;
+  margin: 2px;
+
+  font-size: 90%;
+  color: #000;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+div.dialog div.btns button:hover{
+  background: rgba(255, 255, 255, 0.3);
+}
+div.dialog div.btns button.alt{
+  transition: background 100ms ease;
+
+  background: #222;
+  color: #01FF70;
+}
+div.dialog div.btns button.alt:hover{
+  background: #FFF;
+}
+header{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #0074D9;
+
+  overflow: hidden;
+	border: none;
+  z-index: 1;
+}
+ul{
+  padding: 0;
+}
+
+header h1{
+	display: inline-block;
+	position: relative;
+	float: left;
+	padding: 20px;
+
+	font-family: "Museo";
+	font-weight: 100;
+	font-size: 220%;
+	color: #FFF;
+}
+
+header nav{
+  position: relative;
+  float: right;
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+}
+header nav ul{
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+}
+.headNav li{
+  position: relative;
+  display: inline-table;
+  margin: 0;
+  padding: 20px;
+  height: 100%;
+  list-style-type: none;
+
+  background: transparent;
+  margin-left: 3px;
+
+  cursor: pointer;
+  overflow: hidden;
+	z-index: 1;
+}
+.headNav li:after{
+	transition: top 300ms ease;
+
+	position: absolute;
+	display: block;
+	content: "";
+
+	top: -100%;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background: #AAA;
+	z-index: -1;
+}
+.headNav li:hover:after{
+	color: #FFF;
+	top: 0;
+}
+.headNav li:nth-child(1):after{
+	background: #01FF70;
+}
+.headNav.footNav li:nth-child(1):after{
+	background: #64DD17;
+}
+.headNav li:nth-child(2):after{
+	background: #FF851B;
+}
+.headNav li:nth-child(3):after{
+	background: #FF0;
+}
+.headNav li:nth-child(4):after{
+	background: #FF0097;
+}
+.headNav li:nth-child(5):after{
+	background: #01FF70;
+}
+
+.headNav li a{
+  transition: color 200ms ease;
+
+  display: table-cell;
+  position: relative;
+  height: 100%;
+
+  color: #212121;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 90%;
+
+  vertical-align: middle;
+}
+.headNav.footNav li a{
+  color: #ecf0f1 !important;
+}
+.headNav li:nth-child(1) a{
+	color: #01FF70;
+}
+.headNav li:nth-child(2) a{
+	color: #FF851B;
+}
+.headNav li:nth-child(3) a{
+	color: #FF0;
+}
+.headNav li:nth-child(4) a{
+	color: #FF0097;
+}
+.headNav li:nth-child(5) a{
+	color: #01FF70;
+}
+.headNav li:hover a{
+	color: #000;
+}
+
+section.diapo{
+  transition: background 300ms ease;
+
+  position: relative;
+  left: 0;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+
+	background: #01FF70;
+}
+section.diapo .content{
+	transition: left 1.5s ease;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+section.diapo .diapage{
+	transition: opacity 1s ease;
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+section.diapo:after, section.diapo:before{
+  position: absolute;
+  top: -25px;
+  left: -110px;
+  content: "";
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+
+  background: #A0D468;
+  opacity: 0.4;
+
+  -webkit-transform: rotateZ(30deg);
+  -ms-transform: rotateZ(30deg);
+  -o-transform: rotateZ(30deg);
+  transform: rotateZ(30deg);
+
+  animation: squares 130s linear 0s infinite;
+}
+section.diapo:before{
+  left: auto;
+  top: auto;
+  right: -100px;
+  bottom: 40px;
+
+  background: #FC6E51;
+  z-index: 1;
+
+  -webkit-transform: rotateZ(80deg);
+  -ms-transform: rotateZ(80deg);
+  -o-transform: rotateZ(80deg);
+  transform: rotateZ(80deg);
+
+  animation: squares 80s linear 0s infinite reverse;
+}
+@keyframes squares{
+  15%{
+    background: #FFCE54;
+  }
+  30%{
+    background: #A0D468;
+    -webkit-transform: rotateZ(250deg);
+    -ms-transform: rotateZ(250deg);
+    -o-transform: rotateZ(250deg);
+    transform: rotateZ(250deg);
+  }
+  45%{
+    background: #6D4C41;
+  }
+  60%{
+    background: #4FC1E9;
+  }
+  75%{
+    background: #FC6E51;
+    -webkit-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+  90%{
+    background: #DA4453;
+  }
+}
+.diapage div.desc{
+  position: absolute;
+  width: 100%;
+  bottom: 80px;
+  text-align: center;
+}
+.diapage span.caption{
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+
+  color: #fff;
+  text-transform: uppercase;
+	font-family: "museo";
+  font-size: 160%;
+  font-weight: bold;
+
+  border-left: none;
+}
+
+.diapage span.details{
+  display: inline-block;
+  position: relative;
+  padding: 11px;
+  margin-left: 5px;
+  max-width: 70%;
+
+  text-align: left;
+  font-weight: 100;
+
+	background: #FFF;
+}
+
+.diapo.control{
+  position: absolute;
+	width: 100%;
+  z-index: 1;
+}
+.diapo .control{
+  display: block;
+
+  position: absolute;
+  height: auto;
+  width: 100%;
+  bottom: 10px;
+
+	text-align: center;
+
+  background: transparent;
+  z-index: 2;
+}
+.controlC{
+  display: inline-block;
+}
+.diapo .control .naver{
+  transition: background 1s ease, border 200ms ease;
+
+  display: inline-block;
+  position: relative;
+  width: 11px;
+  height: 11px;
+  margin: auto 5px;
+
+  background: transparent;
+  border: 1px solid #01FF70;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+.diapo .control .naver.focus{
+  background: #01FF70;
+}
+
+
+.d-green .caption, .bg-green{
+  background: #01FF70;
+}
+.d-green .details, .c-green{
+  color: #01FF70 !important;
+}
+
+.d-cyan .caption, .bg-cyan{
+  background: #0074D9;
+}
+.d-cyan .details, .c-cyan{
+  color: #0074D9 !important;
+}
+
+.d-orange .caption, .bg-orange{
+  background: #FF851B;
+}
+.d-orange .details, .c-orange{
+  color: #FF851B !important;
+}
+
+.d-red .caption, .bg-red{
+  background: #E51400;
+}
+.d-red .details, .c-red{
+  color: #E51400 !important;
+}
+
+.d-purple .caption, .bg-red{
+  background: #A200FF;
+}
+.d-purple .details, .c-red{
+  color: #A200FF !important;
+}
+
+.infos{
+  display: block;
+  width: 100%;
+  padding: 30px;
+  overflow: hidden;
+  text-align: center;
+}
+h2{
+  font-family: "museo";
+  color: #FF851B;
+}
+.infos table{
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.infos td{
+  padding: 10px;
+  padding-left: 0;
+  padding-right: 20px;
+  border: none;
+  font-size: 110%;
+  font-family: museo;
+  text-align: left;
+}
+.infos tr td:first-child{
+  text-align: right;
+}
+.infos tr td:last-child a{
+  color: #0074D9;
+  font-weight: bold;
+}
+
+footer{
+
+  width: 100%;
+  min-height: 20%;
+  padding: 20px;
+
+  color: #ecf0f1;
+  font-family: "Museo";
+  font-size: 80%;
+
+  background: #0074D9;
+}
+footer h1{
+  font-weight: 100;
+}
+footer p{
+  width: 100%;
+  background: #0074D9;
+}
+footer nav{
+  margin-top: 30px;
+  text-align: center;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Genius</title>
+    <script type="text/javascript" src="../electron-jquery.js"></script>
+    <script type="text/javascript" src="snap.svg-min.js"></script>
+    <script src="js.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="cover hide">
+      <div class="box">
+        <h1>Etalonnage en cours</h1>
+        <p>Temps restant : <span id="remain">10</span>s</p>
+      </div>
+    </div>
+    <button id="calibrate">Etalonner</button>
+    <table>
+      <tr>
+        <td></td>
+        <td>Non-étalonné</td>
+        <td>Etalonné</td>
+      </tr>
+      <tr>
+        <td>Nord (A)</td>
+        <td class="a"></td>
+        <td class="ae"></td>
+      </tr>
+      <tr>
+        <td>Ouest (B)</td>
+        <td class="b"></td>
+        <td class="be"></td>
+      </tr>
+      <tr>
+        <td>Est (C)</td>
+        <td class="c"></td>
+        <td class="ce"></td>
+      </tr>
+      <tr>
+        <td>Sud (D)</td>
+        <td class="d"></td>
+        <td class="de"></td>
+      </tr>
+    </table>
+    <svg id="svg" viewBox="500 0 1000 1000">
+      <path class="a ne" d="M0 1000" width="1000px"></path>
+      <path class="b ne" d="M0 1000" width="1000px"></path>
+      <path class="c ne" d="M0 1000" width="1000px"></path>
+      <path class="d ne" d="M0 1000" width="1000px"></path>
+      <path class="ae" d="M0 1000" width="1000px"></path>
+      <path class="be" d="M0 1000" width="1000px"></path>
+      <path class="ce" d="M0 1000" width="1000px"></path>
+      <path class="de" d="M0 1000" width="1000px"></path>
+    </svg>
+    
+  </body>
+</html>

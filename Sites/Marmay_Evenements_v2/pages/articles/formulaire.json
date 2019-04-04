@@ -1,0 +1,95 @@
+[
+  {
+    "type": "text",
+    "title": "Demande de devis",
+    "text": "Ce formulaire est une <b>demande<b/> de devis. Le devis ne sera conclu qu'une fois le contrat signé.<br/> Cliquez sur la flèche ou appuyer sur <kbd>Entrée</kbd> pour continuer."
+  },
+  {
+    "type": "input",
+    "label": "Quel est votre nom ?"
+  },
+  {
+    "type": "input",
+    "label": "Quel est votre prénom ?"
+  },
+  {
+    "type": "input",
+    "label": "Quel est le nom de votre société ?"
+  },
+  {
+    "type": "textarea",
+    "label": "Où aura lieu précisément l'animation ?"
+  },
+  {
+    "type": "input",
+    "label": "Quel est votre numéro de téléphone ?"
+  },
+  {
+    "type": "tel",
+    "label": "Quel est votre numéro de téléphone ?"
+  },
+  {
+    "type": "email",
+    "label": "Quel est votre adresse e-mail ?"
+  },
+  {
+    "type": "email",
+    "label": "Quel est votre adresse e-mail ?"
+  },
+
+  {
+    "type": "text",
+    "title": "Choisissez vos prestations",
+    "text": "Vous pourrez appuyer sur les touches 1, 2, 3, 4 ou 5 pour choisir parmi les propositions."
+  },
+  {
+    "type": "list",
+    "label": "Maquillage",
+    "list": ["1 maquilleuse", "2 maquilleuses", "3 maquilleuses", "Pas de maquillage"]
+  },
+  {
+    "type": "list",
+    "label": "Peluche",
+    "list": ["1 peluche", "2 peluches", "3 peluches", "Pas de peluche"]
+  },
+  {
+    "type": "list",
+    "label": "Barbe à papa",
+    "list": ["30 bâtons", "50 bâtons", "80 bâtons", "100 bâtons", "Pas de barbe à papa"]
+  },
+  {
+    "type": "list",
+    "label": "Pop Corn"
+  },
+  {
+    "type": "list",
+    "label": "Pêche aux canards",
+    "list": ["1 bac", "2 bacs", "3 bacs", "3 bacs", "Pas de pêche aux canards"]
+  },
+  {
+    "type": "list",
+    "label": "Sculptures sur ballons",
+    "list": ["10 ballons", "30 ballons", "Je ne veux pas cette prestation"]
+  },
+  {
+    "type": "list",
+    "label": "Granita",
+    "list": ["16 litres de granita", "32 litres de granita", "Pas de granita"]
+  },
+  {
+    "type": "list",
+    "label": "Ballade en Rosalie",
+    "list": ["1 heure", "2 heures", "Pas de ballade"]
+  },
+  {
+    "type": "list",
+    "label": "Photos",
+    "list": ["30 photos", "50 photos", "80 photos", "100 photos", "Pas de photo"]
+  },
+  {
+    "type": "list",
+    "label": "Photoselfie",
+    "list": ["1 heure", "2 heures", "Je ne veux pas cette prestation"]
+  }
+
+]

@@ -1,0 +1,3 @@
+ErrorDocument 404 /me/pages/404.html
+Order Deny,Allow
+Deny from 188.143.232.11

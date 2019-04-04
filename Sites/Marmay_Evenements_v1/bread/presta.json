@@ -1,0 +1,40 @@
+{
+  "STR.A.2":{"name":"Structure Gamme A 2h", "prix": 150},
+  "STR.A.3":{"name":"Structure Gamme A 3h", "prix": 180},
+
+  "STR.B.2":{"name":"Structure Gamme B 2h", "prix": 180},
+  "STR.B.3":{"name":"Structure Gamme B 3h", "prix": 230},
+
+  "STR.C.2":{"name":"Structure Gamme C 2h", "prix": 250},
+  "STR.C.3":{"name":"Structure Gamme C 3h", "prix": 300},
+
+  "STR.AQ.A.2":{"name":"Structure Aquatique A 2h", "prix": 180},
+  "STR.AQ.A.3":{"name":"Structure Aquatique A 3h", "prix": 230},
+
+  "STR.AQ.B.2":{"name":"Structure Aquatique B 2h", "prix": 200},
+  "STR.AQ.B.3":{"name":"Structure Aquatique B 3h", "prix": 250},
+
+  "MAKI.1":{"name":"Maquillage 1h pour environ 10 enfants", "prix": 30},
+  "MAKI.2":{"name":"Maquillage 2h pour environ 20 enfants", "prix": 50},
+  "MAKI.3":{"name":"Maquillage 3h pour environ 30 enfants", "prix": 70},
+
+  "PEL.1":{"name":"Peluche sans animation", "prix": 30},
+
+      "PEL.LOC":{"name":"Location de peluche sans personnel", "prix": 50},
+
+  "BABY":{"name":"Baby Foot", "prix": 50},
+
+  "JV":{"name":"Jeux Vidéos", "prix": 70},
+
+  "PAC.1":{"name":"Pêche aux Canards 1h (1 bac)", "prix": 30},
+  "PAC.2":{"name":"Pêche aux Canards 2h (1 bac)", "prix": 50},
+
+  "BALLON":{"name":"Sculpture sur ballons", "prix": 20},
+
+  "BAP":{"name":"20 barbes à papa", "prix": 30},
+  "POP":{"name":"20 gobelets de Pop Corn", "prix": 35},
+  "GRN":{"name":"Granites", "prix": 80},
+
+  "BOIS.1":{"name":"Location 3 jeux en bois au choix pendant 1h", "prix": 30},
+  "BOIS.2":{"name":"Location 3 jeux en bois au choix pendant 2h", "prix": 50}
+}

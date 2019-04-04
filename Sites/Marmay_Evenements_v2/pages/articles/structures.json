@@ -1,0 +1,16 @@
+[
+  ["page", "Structures gonflables", "/pro/src/struct.jpg"],
+  ["texte", "Les structures gonflables sont <b>idéales</b> pour les Comités d'Entreprises ainsi que les arbres de Noël"],
+  ["image", "/pro/src/aqua_ban.jpg", "Structure aquatique", "Voici la dernière structure de Marmay Evenements"],
+  ["texte", "Nous disposons de deux Toboggans Aquatiques "],
+  ["image", "/pro/src/struct.jpg", "Multiplay", "Gamme A"],
+  ["texte", "Pour les comités d'entreprises à grande échelle, nous vons conseillons une grande structure de type Parcours"],
+  ["image", "/pro/src/struct_rond.jpg", "Big Parcours", "Le Parcours le plus récent de Marmay Evenements"],
+  ["texte", "Les structures gonflables sont <b>idéales</b> pour les Comités d'Entreprises ainsi que les arbres de Noël"],
+  ["image", "/pro/src/aqua_ban.jpg", "Structure aquatique", "Voici la dernière structure de Marmay Evenements"],
+  ["texte", "Nous disposons de deux Toboggans Aquatiques "],
+  ["image", "/pro/src/struct.jpg", "Multiplay", "Gamme A"],
+  ["texte", "Pour les comités d'entreprises à grande échelle, nous vons conseillons une grande structure de type Parcours"],
+  ["image", "/pro/src/struct_rond.jpg", "Big Parcours", "Le Parcours le plus récent de Marmay Evenements"],
+  ["fin", 1]
+]

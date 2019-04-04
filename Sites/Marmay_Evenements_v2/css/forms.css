@@ -1,0 +1,105 @@
+input[type=checkbox], input[type=radio]{
+  cursor: pointer;
+}
+div.input{
+  display: inline-block;
+  margin: 30px;
+}
+div.input:not(.not-required):not(.check)>label:after{
+  content: "*";
+  font-size: 110%;
+  color: red;
+  padding-left: 1px;
+}
+div.input label{
+  position: relative;
+  display: block;
+  left: 2px;
+
+  color: #00B2CA;
+  font-weight: 100;
+  text-align: left;
+}
+div.input.text input{
+  font-size: 110%;
+  padding: 5px;
+  min-width: 250px;
+  outline: none;
+
+  border: 2px solid #00B2CA;
+}
+div.input.text.large input{
+  min-width: 350px;
+}
+div.input.focus input, input:focus{
+  border-color: #F012BE;
+}
+
+div.radBtn{
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+}
+div.input.radio>label{
+  font-size: 120%;
+  text-align: center;
+}
+
+div.radBtn label{
+  display: inline;
+  color: #F79256;
+}
+
+div.input.textarea textarea{
+  width: 400px;
+  height: 100px;
+  padding: 5px;
+
+  font-size: 100%;
+  resize: none;
+  outline: none;
+
+  border: 2px solid #00B2CA;
+}
+div.input.textarea.large{
+  width: 60%;
+  height: 200px;
+}
+div.input.textarea.large textarea{
+  width: 100%;
+  height: 200px;
+}
+div.input.focus textarea, div.input.textarea textarea:focus{
+  border-color: #F012BE;
+}
+
+div.input.check label{
+  display: inline-block;
+  color: #212121;
+  vertical-align: middle;
+}
+div.input.check input{
+  display: inline-block;
+
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+input.error{
+  border-color: #FF4136 !important;
+}
+button{
+  padding: 10px;
+
+  font-size: 100%;
+  text-transform: uppercase;
+  color: #fff;
+
+  background: #FFCC00;
+  font-weight: normal;
+  border: none;
+  cursor: pointer;
+
+  border: 1px solid #FFCC00;
+}

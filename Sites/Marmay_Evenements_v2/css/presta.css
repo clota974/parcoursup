@@ -1,0 +1,235 @@
+section.presta{
+  width: 100%;
+
+  text-align: center;
+
+  background: #000;
+}
+section.presta a{
+  transition: top .3s ease;
+
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+div.cardP{
+  transition: opacity .6s ease, height .6s ease;
+  opacity: 0.6;
+
+  width: 100%;
+  position: relative;
+  height: 300px;
+  display: inline-block;
+  text-align: center;
+
+  background: url("/pro/src/aqua_ban.jpg") #000 no-repeat center;
+  background-size: cover;
+  vertical-align: top;
+
+  border-top: 2px solid white;
+}
+@media only screen and (max-device-width:480px){
+  div.cardP{
+    opacity: 1;
+  }
+}
+div.cardP:hover{
+  opacity: 1;
+  height: 400px;
+}
+div.cardP h4{
+  position: absolute;
+  bottom: 20px;
+  display: inline-block;
+  padding: 7px;
+
+  font-size: 250%;
+  color: #FFF;
+
+  background: #FF00AD;
+  transform: translateX(-50%);
+}
+div.cardP h4:after{
+  position: absolute;
+  top: 0;
+  left: 100%;
+
+  display: inline-block;
+  content: "";
+  height: 100%;
+  width: 60px;
+
+  background: url("/pro/src/fleche_rose.svg") #FFF repeat-x center;
+  background-size: contain;
+}
+
+a:nth-child(even) div.cardP h4{
+  background: #FFCB00;
+}
+a:nth-child(even) div.cardP h4:after{
+  left: -60px;
+  background-image: url("/pro/src/fleche_jaune.svg");
+  animation-name: arrow_y;
+}
+@keyframes arrow_y{
+  0%{
+    background-position: 0;
+  }
+  50%{
+    background-position: -60px;
+  }
+  70%{
+    background-position: -65px;
+  }
+  100%{
+    background-position: -60px;
+  }
+}
+a:nth-child(odd):hover div.cardP h4:after{
+  animation: arrow 1s ease infinite;
+  /* L'animation ARROW est définie dans master.css pour le scroller */
+}
+a:nth-child(even):hover div.cardP h4:after{
+  animation: arrow_y 1s ease infinite;
+}
+
+
+section.presta h1{
+  color: #00B2CA;
+  font-family: "museo", "helvetica";
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 5px;
+  font-weight: 100;
+  font-size: 200%;
+}
+section.presta div.info{
+  margin-top: 20px;
+  margin-bottom: -10px;
+
+  background: #FFDE55;
+  color: #222;
+  font-weight: 100
+}
+
+div.card{
+  transition: transform 500ms ease, background .2s ease;
+
+  display: inline-block;
+  padding: 10px;
+  margin: 15px;
+
+  text-align: center;
+
+  background: transparent;
+  cursor: pointer;
+
+  overflow: hidden;
+}
+div.card a{
+  text-decoration: none;
+  color: inherit;
+}
+div.card:hover{
+  transform: scale(1.1);
+  background: rgba(255, 203, 0, 0.2);
+}
+div.card .illustr{
+  top: 10px;
+  margin: 0;
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+  background: no-repeat center;
+  background-size: cover;
+  border: 8px solid #FFF;
+}
+div.card h3{
+  margin-top: 5px;
+
+  text-transform: none;
+  font-family: museo;
+  font-size: 180%;
+  font-weight: 100;
+
+  height: 100%;
+}
+
+div.card.maki{
+  color: #F79256;
+}
+div.card.maki .illustr{
+  background-image: url("../src/maki_petit.jpg");
+}
+
+div.card.peluche{
+  color: #7DCFB6;
+}
+div.card.peluche .illustr{
+  background-image: url("../src/chien.jpg");
+}
+
+div.card.struct{
+  color: #B38FB1;
+}
+div.card.struct .illustr{
+  background-image: url("../src/struct.jpg");
+}
+
+div.card.confiserie{
+  color: #E3868F;
+}
+div.card.confiserie .illustr{
+  background-image: url("../src/bap.jpg");
+}
+
+div.card.bois{
+  color: #00B2CA;
+}
+div.card.bois .illustr{
+  background-image: url("../src/bois.jpg");
+}
+
+div.card.ballon{
+  color: #FFDE55;
+  padding: 5px;
+  margin: 20px;
+}
+div.card.ballon h3{
+  font-size: 130%;
+}
+div.card.ballon .illustr{
+  background-image: url("../src/ballons.jpg");
+}
+
+div.card.jv{
+  color: #FF4136;
+}
+div.card.jv .illustr{
+  background-image: url("../src/jv.jpg");
+}
+
+div.card.pac{
+  color: #E671B8;
+  padding: 5px;
+  margin: 20px;
+}
+div.card.pac h3{
+  font-size: 140%;
+}
+div.card.pac .illustr{
+  background-image: url("../src/peche.png");
+}
+div.card.baby{
+  color: blue;
+}
+div.card.baby .illustr{
+  background-image: url("../src/baby.png");
+}
+div.card.photoselfie{
+  color: #FF00AD;
+}
+div.card.photoselfie .illustr{
+  background-image: url("../src/photoselfie_rond.png");
+}

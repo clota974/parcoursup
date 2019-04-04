@@ -1,0 +1,20 @@
+[
+  ["page", "Nouveautés et forfaits", "/pro/src/structures/arche-a.jpg", "center 40%"],
+  ["texte", "N'oublez pas de suivre l'actualité de Marmay Evenements sur les réseaux sociaux!"],
+
+  ["roll", "Les forfaits"],
+  ["fiche", "/pro/src/forfait250.jpg"],
+  ["roll-fin"],
+  
+  ["roll", "Les nouveaux aquatiques"],
+  ["texte", "Besoin d'un rafraîchissement? Besoin d'une structure aquatique!"],
+  ["image", "/pro/src/aqua_ban.jpg", "Underwater", "Attention à la douche froide!"],
+  ["roll-fin"],
+
+  ["roll", "Les nouveaux parcours"],
+  ["texte", "Les parcours sont des structures plutôt grandes."],
+  ["image", "/pro/src/struct_rond.jpg", "Jusqu'au bout!", "Voici un vrai parcours du petit combattant", 600],
+  ["roll-fin"],
+
+  ["fin", 1]
+]

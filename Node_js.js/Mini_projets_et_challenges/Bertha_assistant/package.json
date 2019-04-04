@@ -1,0 +1,8 @@
+{
+  "name": "Mon-app",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "electron-ipc-stream": "^0.2.0"
+  }
+}

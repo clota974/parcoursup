@@ -1,0 +1,14 @@
+{
+  "name": "Monapp",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "electron-ipc-stream": "^0.2.0",
+    "serialport": "^6.0.5"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "0.30.6",
+    "electron-rebuild": "^1.5.7",
+    "serialport-electron": "1.7.4-electron-0.30.6"
+  }
+}

@@ -1,0 +1,7 @@
+[
+  ["page", "Maquillage", "/pro/src/struct_rond.jpg"],
+  ["texte", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."],
+  ["image", "/pro/src/aqua_ban.jpg", "Structure aquatique", "Voici la dernière structure de Marmay Evenements"],
+  ["texte", "Nous disposons de deux Toboggans Aquatiques "],
+  ["fin", 1]
+]

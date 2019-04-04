@@ -1,0 +1,208 @@
+div.imgs{
+  text-align: center;
+}
+div.bg-img{
+  display: inline-block;
+  min-width: 200px;
+  min-height: 300px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section.hero-img{
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  -webkit-filter: saturate(200%);
+  -o-filter: saturate(200%);
+  filter: saturate(200%);
+}
+
+section.presta section.fLeft{
+  position: relative;
+  float: left;
+  width: 50%;
+}
+section.presta section.fRight{
+  position: relative;
+  float: right;
+  width: 40%;
+  border-radius: 2px;
+}
+section.fRight:after, section.fRight:before{
+  display: none;
+}
+section.presta{
+  position: relative;
+  padding: 30px;
+  margin-bottom: 10px;
+
+  font-size: 110%;
+}
+section.presta div.illustr{
+  transition: border 300ms ease;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 30px;
+  right: 30px;
+  border: 5px solid #F79256;
+  border-color: #E671B8 #E671B8 #F79256 #F79256;
+  border-radius: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.presta div.illustr:hover{
+  border-color: #F79256 #F79256 #E671B8 #E671B8;
+}
+section.presta h1{
+  font-family: "museo", "helvetica";
+  font-size: 190%;
+  color: #F79256;
+  font-weight: 100;
+}
+section.presta p{
+  position: relative;
+  /* float: left; */
+  display: inline-block;;
+  line-height: 25px;
+  color: #444;
+  min-height: 350px;
+  max-width: 60%;
+}
+section.presta ul{
+  padding: 0 25px;
+  line-height: 2em;
+}
+section.presta p br{
+  line-height: 35px;
+}
+section.presta p a{
+  font-family: "museo", "helvetica";
+  color: #00F;
+}
+
+div.addDevis_cont{
+  text-align: center;
+}
+div.addDevis{
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  padding: 25px 40px;
+  text-align: left;
+
+  color: #FFCB00;
+  font-size: 150%;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background: rgba(238, 238, 238, 0.5);
+  border-radius: 50px;
+  border: 3px solid #FFCB00;
+  cursor: pointer;
+
+  overflow: hidden;
+}
+div.addDevis h6{
+  transition: color 1s ease, opacity 500s ease;
+
+  z-index: 9;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+}
+div.addDevis:after{
+
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  content: "+";
+  display: inline-block;
+
+  font-size: 160%;
+}
+
+div.round{
+  transition: transform 1s ease, background 1s ease;
+
+  z-index: 2;
+  position: absolute;
+  display: inline-block;
+  top: -5px;
+  right: -5px;
+
+  width: 100px;
+  height: 100px;
+
+  background: #FFCB00;
+  border-radius: 50%;
+
+  transform: scale(0); /* JQUERY animate to scale(18) */
+}
+
+div.noaccess{
+  width: 70%;
+  padding: 25px;
+  margin: 25px auto;
+  text-align: center;
+  background: #FFCB00;
+  border: 5px dashed #FFF;
+}
+label{
+  display: block;
+  font-family: museo;
+  font-weight: bold;
+  color: #FFF;
+}
+.noaccess input{
+  width: 20%;
+  padding: 5px;
+  margin: 10px;
+
+  text-align: center;
+  font-size: 130%;
+  font-family: museo;
+  color: #FFCB00;
+
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+.noaccess button{
+  text-align: center;
+  display: block;
+  margin: 5px auto;
+  color: #FFF;
+  background: transparent;
+  border: 2px solid #FFF;
+  border-radius: 3px;
+}
+
+div.gamme.roll h2{
+  color: #FF00AD;
+}
+div.gamme.roll h2:after{
+  content: "Cliquez pour afficher";
+  margin-left: 10px;
+
+  color: #AAA;
+  font-weight: 100;
+  font-size: 50%;
+}
+div.gamme.roll.open h2:after{
+  content: "Cliquez pour masquer";
+}

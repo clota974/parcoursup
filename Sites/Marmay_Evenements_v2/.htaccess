@@ -1,0 +1,9 @@
+DirectoryIndex /pro/pages/acceuil.php
+
+ErrorDocument 404 /me/pages/404.html
+ErrorDocument 403 /me/pages/404.html
+
+RewriteEngine On
+RewriteRule ^article/([^/]*)$ /pro/pages/article.php?article=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ /pro/pages/$1.php [NC,L]
