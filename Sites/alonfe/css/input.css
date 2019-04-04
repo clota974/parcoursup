@@ -1,0 +1,18 @@
+/*** Form style ***/
+
+:host{
+    position: absolute;
+
+    width: 100%;
+    height: 200px;
+    background: blue;
+    overflow: hidden;
+}
+
+:host *{
+    background: blue;
+}
+
+div.input_box{
+
+}

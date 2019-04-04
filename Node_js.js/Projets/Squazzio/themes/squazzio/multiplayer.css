@@ -1,0 +1,46 @@
+h1{
+  transition: color .5s ease;
+}
+h1.me{
+  color: #ff00de !important;
+}
+h1.adv{
+  color: #fffc00 !important;
+}
+
+td div, .subhead div.me, .subhead div.adv{
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+td div.me, .subhead div.me{
+  background-color: #ff00de !important;
+}
+td.movable.me{
+  background: rgba(255, 0, 222, .1) !important;
+}
+div.dialog.me:before{
+  background: #ff00de;
+}
+div.dialog.me{
+  background: #d418bb;
+}
+
+
+td div.adv, .subhead div.adv{
+  background: #fffc00 !important;
+}
+td.movable.adv{
+  background: rgba(255, 252, 0, .1) !important;
+}
+div.dialog.adv:before{
+  background: #fffc00;
+}
+div.dialog.adv{
+  background: #d5d30a;
+}
+
+table.kaptur.busted td.busted div{
+  transition: border .8s ease;
+  border-color: #FF4136 !important;
+  background: initial;
+}

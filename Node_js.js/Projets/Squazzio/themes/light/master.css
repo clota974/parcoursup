@@ -1,0 +1,148 @@
+html, body{
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Exo 2";
+  background: #333;
+}
+
+div.abs{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 91;
+
+  background: rgba(0,0,0,0.5);
+}
+div.dialog{
+  transition: top 1s ease, transform 1s ease;
+
+  z-index: 3;
+  position: fixed;
+  min-width: 300px;
+  top: -100%;
+  left: 50%;
+  z-index: 4;
+  display: inline-block;
+  padding: 20px;
+
+  color: #B10DC9;
+  font-size: 130%;
+  text-align: center;
+
+  background: #B10DC9;
+  transform: translateX(-50%) translateY(-50%) rotateZ(360deg);
+}
+div.dialog p{
+  color: inherit;
+}
+div.dialog.appear{
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(1deg);
+}
+div.dialog:after, div.dialog:before{
+  transition: transform 200ms ease;
+  z-index: -1;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background: #EEE;
+  transform: rotateZ(0deg);
+}
+div.dialog:before{
+  background: #0074D9;
+  transform: rotateZ(0deg);
+}
+div.dialog.appear:after{
+  transition: transform 2s ease;
+  transform: rotateZ(-5deg);
+}
+div.dialog.appear:before{
+  transition: transform 1s ease;
+  transform: rotateZ(-10deg);
+}
+
+div.dialog.lost:before{
+  background: #FF4136;
+}
+div.dialog.reversi:before{
+  background: #FF4136;
+}
+div.dialog.reversi{
+  background: #00F;
+}
+div.dialog h4{
+  margin: 0;
+  padding: 0;
+
+  font-size: 180%;
+  font-weight: 100;
+}
+div.dialog button{
+  padding: 10px 20px;
+
+  color: #FFF;
+  font-size: 100%;
+  font-weight: 300;
+
+  background: #B10DC9;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+div.dialog.reward{
+  background: #ff006a;
+  color: gold;
+}
+div.dialog.reward:before{
+  background: gold;
+}
+div.dialog.reward:after{
+  background: #333;
+}
+div.dialog.reward button{
+  background: gold;
+  color: #333;
+}
+
+div.menu{
+  display: table;
+  position: relative;
+  width: 100%;
+
+  font-size: 130%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-bottom: 10px;
+  background: #B10DC9;
+  text-align: center;
+}
+div.menu a{
+  transition: color 300ms ease;
+  display: table-cell;
+  padding: 15px;
+  font-weight: 100;
+  color: #FFF;
+  cursor: pointer;
+  text-decoration: none;
+}
+div.menu a:hover{
+  color: #B10DC9;
+  background: #FFF;
+}
+hr{
+  margin: 30px 10px;
+  border: 1px solid #FFF;
+  border-radius: 1px;
+}

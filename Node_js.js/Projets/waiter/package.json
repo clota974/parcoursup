@@ -1,0 +1,17 @@
+{
+    "name": "ma-todolist",
+    "version": "0.1.0",
+    "main": "main.js",
+    "dependencies": {
+        "async-eval": "^0.1.5",
+        "body-parser": "^1.10.2",
+        "cookie-session": "^1.1.0",
+        "ejs": "^2.1.4",
+        "express": "^4.11.2",
+        "qrcode": "^1.2.0",
+        "socket.io": "^2.0.3",
+        "string-replace-async": "^1.2.1"
+    },
+    "author": "Killian",
+    "description": "Un gestionnaire de todolist ultra basique"
+}

@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  padding: 15px;
+}
+h1{
+  color: #EEE;
+  font-size: 210%;
+
+  text-transform: uppercase;
+}
+
+div.menu{
+  display: inline;
+  background: transparent;
+}
+div.menu a{
+  display: inline;
+  background: transparent;
+  padding: 2px;
+  border-bottom: 2px solid #000;
+}
+div.menu a:hover{
+  display: inline;
+  color: #FFF;
+  background: transparent;
+  border-bottom: 2px solid #FFF;
+}
+p{
+  color: #FFF;
+  font-weight: 100;
+  font-size: 130%;
+}
+
+div.input{
+  width: 100%;
+  margin: 15px 0;
+}
+div.input label, div.input span{
+  display: inline-block;
+  padding: 3px 5px;
+  margin-right: 4px;
+
+  color: #FFF;
+  font-size: 110%;
+
+  background: #B10DC9;
+}
+div.input span{
+  background: #222;
+  font-size: 100%;
+}
+.input span a{
+  color: #CCF;
+}
+div.input input{
+  display: block;
+  width: 100%;
+  padding: 5px;
+
+  font-family: Serifa;
+  font-weight: bold;
+  font-size: 120%;
+  border: 3px solid #B10DC9;
+  background: #FFF;
+
+  outline: none;
+}
+div.input span.ok{
+  background: #8CC152;
+  border-bottom: 1px solid #8CC152;
+}
+div.input span.alert{
+  background: #ED5565;
+  border-bottom: 1px solid #DA4453;
+}
+div.input span.warning{
+  background: #F6BB42;
+  border-bottom: 1px solid #F6BB42;
+}
+button{
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #B10DC9;
+
+  font-family: Serifa;
+  font-weight: bold;
+  font-size: 120%;
+  color: #FFF;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  border: none;
+  outline: none;
+}

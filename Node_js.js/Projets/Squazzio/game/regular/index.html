@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Genius</title>
+    <script type="text/javascript" src="../../electron-jquery.js"></script>
+    <script src="../../js/master.js" charset="utf-8"></script>
+    <script src="../../class/masterclasses.js" charset="utf-8"></script>
+    
+    <script src="../../newjs/game.js" charset="utf-8"></script>
+    <script src="../../newjs/board.js" charset="utf-8"></script>
+    <script src="../../newjs/player.js" charset="utf-8"></script>
+    <script src="../../newjs/dots.js" charset="utf-8"></script>
+    <script src="../../newjs/center.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="../../themes/squazzio/master.css">
+    <link rel="stylesheet" href="../../themes/squazzio/game.css">
+  </head>
+  <body id="regular">
+    <div class="abs">
+      <div class="statsMenu">
+        <h2>STATS</h2>
+        <h3>L'Humain a gagné</h3>
+        <table>
+          <tr>
+            <td>Temps de jeu total</td>
+            <td>20:00 (100%)</td>
+          </tr>
+          <tr>
+            <td>Temps de réflexion de L'Humain</td>
+            <td>15:00 (75%)</td>
+          </tr>
+          <tr>
+            <td>Temps de réflexion de Squazzibot</td>
+            <td>5:00 (25%)</td>
+          </tr>
+          <tr>
+            <td>Nombre de déplacements total</td>
+            <td>20</td>
+          </tr>
+        </table>
+
+        <button type="button" class="interactive" onclick="window.location.reload()"><span>Recommencer</span></button>
+        <button type="button" class="interactive" onclick="Game.popups.stats.close()"><span>Fermer</span></button>
+      </div>
+    </div>
+    <div style="display: none" class="zikCont">
+    </div>
+    <header>
+      <h2>Vous jouez contre</h2>
+      <h1>Squazzibot</h1>
+    </header>
+    <div class="subhead">
+      <div class="mine">
+      </div>
+      <div class="op">
+      </div>
+    </div>
+    <table class="kaptur">
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+DirectoryIndex /alonfe/html/accueil.php
+
+ErrorDocument 404 /me/pages/4004.html
+ErrorDocument 403 /me/pages/4004.html
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ /alonfe/html/$1.php [NC,L]
+

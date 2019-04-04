@@ -1,0 +1,19 @@
+{
+  "name": "Mon-app",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "buffer-crc32": "^0.2.13",
+    "ds4": "^1.0.0-rc1",
+    "dualshock": "^3.1.1",
+    "electron-ipc-stream": "^0.2.0",
+    "firmata-electron": "^0.5.6",
+    "node-bluetooth": "^1.2.0",
+    "node-hid": "0.7.2"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.6.0",
+    "johnny-five": "^1.0.0",
+    "robotjs": "^0.4.7"
+  }
+}

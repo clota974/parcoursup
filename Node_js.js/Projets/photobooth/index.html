@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Genius</title>
+    <script type="text/javascript" src="electron-jquery.js"></script>
+    <script src="js.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="bubble">Appuyer sur le bouton pour commencer</div>
+    <div class="photoselfie">
+      <div class="btnCont">
+        <div class="btn"></div>
+      </div>
+    </div>
+    <section class="home show">
+      <img src="photoselfie.png" alt="">
+      <h2>Faites-vos plus beaux sourires (ou vos plus belles grimaces) !</h2>
+    </section>
+    <section class="taking">
+      <div id="camdemo" class="flex"></div>
+      <div class="timer"><div class="timeNumber">3</div></div>
+      <div id="result" class="flex"></div>
+      <div class="cover"></div>
+    </section>
+    <section class="decor">
+      <h1>Appuyez sur les flèches pour changer le décor</h1>
+      <div class="image">
+        <iframe src="" seamless="true" id="preview"></iframe>
+      </div>
+      <div class="choix">
+        <button type="button" id="print">Imprimer</button>
+        <button type="button" id="cancel">Quitter</button>
+      </div>
+      <div class="order">
+        <div class="next">➜</div>
+        <div class="prev">➜</div>
+      </div>
+    </section>
+  </body>
+</html>

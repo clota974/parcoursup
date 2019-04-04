@@ -1,0 +1,15 @@
+{
+  "COPYRIGHT © ": "MARMAY EVENEMENT - Squazzio / All rights reserved / Tous droits résérvés",
+
+  "tuto":[
+    {"txt": "Le cercle au centre est l'une de vos pions.", "btn": "Suivant"},
+    {"txt": "Voici l'un des pions adverses.", "btn": "Suivant"},
+    {"txt": "Pour gagner, vous devez encercler un des pions adverses comme ci-dessous. Cela s'appelle un Squazzio.", "btn": "Suivant"},
+    {"txt": "Vos pions peuvent aller sur n'importe quelle case libre qui l'entoure. Sélectionnez un pion en cliquant dessus et les cases vers lesquelles ce pion peut se déplacer s'éclaireront.", "btn": "Sélectionner votre pion pour continuer"},
+    {"txt": "Pour bouger votre pion, double-cliquez sur l'une des cases éclairées.", "btn": "Bouger votre pion pour continue"},
+    {"txt": "Cliquez sur l'un de vos pions et double-cliquez sur une des cases éclairées de manière à faire un Squazzio.", "btn": "Faites un Squazzio pour continuer"},
+    {"txt": "Dans le mode classique, vous avez chacun 3 pions.", "btn": "Suivant"},
+    {"txt": "Pour placer un pion, double-cliquez sur n'importe quelle case libre.", "btn": "Placer un pion pour continuer"},
+    {"txt": "Tout est bon !", "btn": "Quitter"}
+  ]
+}

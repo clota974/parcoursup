@@ -1,0 +1,26 @@
+h1{
+  -webkit-filter: saturate(200%);
+}
+div.dialog{
+  background: #FFF;
+}
+div.dialog:before{
+  background: #111;
+}
+div.menu{
+  background: #000;
+}
+div.menu div:hover{
+  color: #000;
+}
+td div, div.subhead .me{
+  background: #000;
+  border-color: #FFF;
+}
+table.kaptur td.movable{
+  background: #111;
+}
+td div.adv, div.subhead .adv{
+  background: #FFF;
+  border-color: #000;
+}

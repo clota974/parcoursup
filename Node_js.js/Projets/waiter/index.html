@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <script src="../electron-jquery.js"></script>
+    <script src="kln.js"></script>
+    <script src="server_async.js"></script>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header class="grid">
+      <h1>Waiter</h1>
+      <div class="slider shift" id="serverState">
+        <div class="toasts">
+          <div class="on">Serving</div>
+          <div class="off">Sleeping</div>
+        </div>
+      </div>
+    </header>
+    <output>The server is off.</output><br/>
+
+    <section>
+      Port : <input type="text" placeholder="3000" value="3000" id="port"/>
+    </section>
+    <button id="send">Send</button><button id="req">Request</button>
+  </body>
+</html>

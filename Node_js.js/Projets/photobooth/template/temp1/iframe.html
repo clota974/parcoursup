@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../../../electron-jquery.js"></script>
+    <style media="all">
+      @page{
+        size: 10cm 15cm;
+        margin: 0;
+        orientation: landscape;
+      }
+      @media print{
+        body, html{
+
+          width: 15cm;
+          height: 10cm;
+        }
+      }
+      @media screen{
+        body, html{
+          width: 30cm;
+          height: 20cm;
+        }
+      }
+      *{
+        box-sizing: border-box;
+      }
+      body, html{
+        position: relative;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        /*width: 15cm;
+        height: 10cm;*/
+        overflow: hidden;
+
+        background: url("bg.svg") no-repeat;
+        background-size: cover;
+      }
+      .hover{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+
+        z-index: 9;
+      }
+      .pic{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 40%;
+
+        border-radius: 10px;
+        border: 2px solid #FFF;
+        z-index: 1;
+      }
+      .pica{
+        transform: translate(-100%, -100%);
+      }
+      .picb{
+        transform: translate(-0%, -100%);
+      }
+      .picc{
+        transform: translate(-100%, -0%);
+      }
+      .picd{
+        transform: translate(-0%, -0%);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../../tmp/pic1.png" class="pic pica">
+    <img src="../../tmp/pic2.png" class="pic picb">
+    <img src="../../tmp/pic3.png" class="pic picc">
+    <img src="../../tmp/pic4.png" class="pic picd">
+    <img src="hover.svg" class="hover" >
+    <script type="text/javascript" src="../print.js"></script>
+  </body>
+</html>

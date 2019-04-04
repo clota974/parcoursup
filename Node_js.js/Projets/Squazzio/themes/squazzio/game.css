@@ -1,0 +1,283 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  transition: opacity 100ms ease, background 700ms ease;
+  width: 100%;
+  height: 100%;
+  min-width: 380px;
+
+  margin: 0;
+
+  background: #0074D9;
+  text-align: center;
+  overflow: hidden;
+}
+
+header{
+  margin: 20px 0;
+}
+h1{
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
+  text-align: center;
+  font-size: 280%;
+  text-transform: uppercase;
+
+  color: #FFF;
+}
+h1.busted{
+  -webkit-filter: saturate(200%);
+}
+
+h2{
+  margin: 0;
+
+  color: #fff;
+  font-weight: 100;
+}
+h3{
+  font-weight: 100;
+  text-align: center;
+  font-size: 120%;
+  text-transform: uppercase;
+  color: #FFF;
+}
+table.kaptur{
+  position: relative;
+  border-collapse: collapse;
+  margin: 15px auto;
+  background: #ffffff;
+  border: 1px solid #000;
+}
+table.kaptur td{
+  transition: border-color 500ms ease;
+
+  width: 100px;
+  height: 100px;
+  border: 1px solid transparent;
+  text-align: center;
+  cursor: pointer;
+  background: transparent;
+
+}
+table.kaptur:hover td{
+  border-color: rgba(0, 135, 255, 0.2);
+}
+table.kaptur td.movable{
+  background: rgba(252, 191, 3, 0.2);
+}
+table.kaptur td.movable.adv{
+  background: rgba(251, 46, 141, 0.2);
+}
+table.kaptur td.case{
+  background: rgba(255, 255,255, 0.2);
+}
+
+td div, div.subhead div div{
+  transition: top 300ms ease, left 300ms ease,
+  transform 200ms ease, border 200ms ease,
+  border-radius 1s ease, background 3s ease;
+
+  position: absolute;
+  display: inline-block;
+  width: 97px;
+  height: 97px;
+  opacity: 1;
+
+  background: #FDBF02;
+  border: 0px solid rgba(0,0,0,0.4);
+  border-radius: 50%;
+  transform: scale(0.5);
+
+  animation: select 800ms ease 1;
+}
+div.subhead{
+  margin-bottom: 10px;
+  text-align: center;
+}
+.subhead div{
+  transition: border-color .3s ease, transform .4s ease, opacity .3s ease;
+
+  display: inline-block;
+  height: 40px;
+  margin: 0 20px;
+  padding: 5px;
+
+  text-align: center;
+
+  overflow: hidden;
+  background: #ffffff;
+}
+.subhead > div::after, .subhead > div::before{
+  /* TODO */
+  content: "";
+  display: none;
+  height: 40px;
+  width: 40px;
+
+  position: relative;
+
+  background: #ffffff;
+}
+div.subhead div div{
+  display: inline-flex;
+  transition: top 400ms ease-in, width 400ms ease-in, margin 400ms ease-in;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin: 2px 7px;
+  top: 0;
+
+  transform: none;
+  animation: none;
+}
+/*div.mine{
+  text-align: right;
+}
+div.op{
+  text-align: right;
+}*/
+@keyframes select{
+  5%{
+    border-radius: 50%;
+    transform: scale(0.7);
+  }
+  55%{
+    border-radius: 50%;
+    transform: scale(0.45);
+  }
+}
+table.kaptur{
+  cursor: pointer;
+}
+table.kaptur td div.selected{
+  border-radius: 50%;
+  border-width: 48px;
+}
+td div.adv, .subhead div.adv{
+  background: #FB2E8D;
+  border-color: rgba(0, 0, 0, .5);
+}
+
+table.kaptur.busted td{
+  border-color: rgba(177, 13, 201, 0.4);
+}
+table.kaptur.busted td div{
+  transition: border 3s ease,
+  border-radius 1s ease, background 3s ease,
+  transform 1s ease;
+
+  background: #333;
+  border-color: #444;
+  border-radius: 50%;
+  transform: scale(0.5);
+
+}
+table.kaptur.busted td div.adv{
+  background: #B10DC9;
+  border-color: rgba(0,0,0, 0.6);
+}
+table.kaptur.busted td.busted div.adv{
+  background: #FF4136;
+}
+table.kaptur.busted td.busted div.me{
+  border-color: #B10DC9;
+
+}
+
+@keyframes squazzio_bg{
+  10%{
+    background: #B10DC9;
+    border-color: #B10DC9;
+  }
+  20%{
+    background: #FF4136;
+    border-color: #FF4136;
+  }
+  30%{
+    background: #FFF;
+    border-color: #FFF;
+  }
+  40%{
+    background: #0FF;
+    border-color: #0FF;
+  }
+  50%{
+    background: lime;
+    border-color: lime;
+  }
+  60%{
+    background: #000;
+    border-color: #000;
+  }
+  70%{
+    background: #FF0;
+    border-color: #FF0;
+  }
+  80%{
+    background: #F0F;
+    border-color: #F0F;
+  }
+  90%{
+    background: #00F;
+    border-color: #00F;
+  }
+}
+
+body.squazzio{
+  animation: squazzio_bg 1s ease 10 reverse;
+}
+div.tuto{
+  transition: top 300ms ease, left 300ms ease;
+
+  z-index: 3;
+  position: relative;
+  margin: 10px;
+  margin-top: -30px;
+  padding: 10px;
+
+  color: #FFF;
+
+  background: transparent;
+  border-radius: 5px;
+  border: 3px solid #B10DC9;
+  border-color: #B10DC9 transparent;
+}
+div.tuto p{
+  z-index: 2;
+  display: inline-block;
+
+  margin: 0;
+  padding: 10px;
+
+  font-size: 110%;
+}
+div.tuto button{
+  z-index: 3;
+  position: relative;
+  display: inline-block;
+  top: -3px;
+
+  min-height: 30px;
+  padding: 10px 15px;
+
+  background: #B10DC9;
+  color: #EEE;
+  font-size: 100%;
+  border: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  border-radius: 3px;
+}
+div.tuto button:disabled{
+  cursor: default;
+  background: transparent;
+  color: #B10DC9;
+  border: 1px solid #B10DC9;
+}

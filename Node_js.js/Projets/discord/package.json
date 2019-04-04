@@ -1,0 +1,9 @@
+{
+    "name": "JeanMichel",
+    "version": "0.0.1",
+    "description": "Jean Michel vous aide dans la vie",
+    "main": "main.js",
+    "dependencies": {
+        "discord.js": "^11.3.2"
+    }
+}

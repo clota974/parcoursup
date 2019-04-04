@@ -1,0 +1,356 @@
+*{
+  box-sizing: border-box;
+  overflow: hidden;
+  outline: none;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+
+  background: #FFF;
+  background-size: cover;
+  font-family: "Museo";
+  text-align: center;
+  overflow: hidden;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+  align-content: center;
+}
+
+section{
+  transition: top 1s ease;
+  position: absolute;
+  top: 100%;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+section.home{
+  background: url("rosalie.jpg");
+  background-size: cover;
+}
+.home *{
+  z-index: 2;
+}
+.home h2{
+  color: #FFCB00;
+  font-size: 250%;
+  padding: 5px;
+  -webkit-text-stroke-color: #FFF;
+  -webkit-text-stroke-width: 0.5px;
+}
+section.show{
+  top: 0;
+}
+.photoselfie{
+  position: fixed;
+  z-index: 95;
+  bottom: 20px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  background: transparent;
+  overflow: visible;
+}
+.bubble{
+  transition: opacity .3s ease;
+
+  position: fixed;
+  padding: 10px;
+  bottom: 115px;
+  left: 50%;
+  z-index: 92;
+
+  font-size: 120%;
+  font-weight: bold;
+  color: #333;
+
+  border: 2px solid #FFF;
+  background: #FFCB00;
+  border-radius: 10px;
+  transform: translateX(-50%);
+}
+
+.photoselfie .btnCont{
+  transition: opacity .3s ease;
+  padding: 3px;
+  border: 7px solid #FF00AD;
+  border-radius: 50%;
+}
+.btnCont.load{
+  animation: btnRound 5s 0s linear infinite;
+  border-style: dotted;
+}
+@keyframes btnRound {
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+.photoselfie .btn{
+  width: 70px;
+  height: 70px;
+  padding: 30px;
+
+  background: #FFCB00;
+  border-radius: 50%;
+  overflow: visible;
+}
+.photoselfie .btn:after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+.decor .order{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+
+  transform: translateY(-50%);
+  z-index: 90;
+  overflow: visible;
+}
+.order div{
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  padding: 11px 18px;
+
+  background: #FF00AD;
+  border: 3px dashed #FFF;
+  color: #FFF;
+  border-radius: 50%;
+  font-size: 400%;
+
+  z-index: 99;
+  transform: translateY(-50%);
+}
+.order .next{
+  right: 20px;
+}
+.order .prev{
+  left: 20px;
+  transform: translateY(-50%)  rotateY(180deg);
+}
+.decor.show .order div{
+  animation: hint 1s 0s ease 10;
+}
+@keyframes hint{
+  60%{
+    background: #FF00AD;
+  }
+  90%{
+    background: #FFCB00;
+  }
+}
+@keyframes color{
+  0%   {background-color: #FF00AD;}
+  25%  {background-color: #FFCB00;}
+  50%  {background-color: #2196F3;}
+  75%  {background-color: #4CAF50;}
+  100% {background-color: #FF00AD;}
+}
+.timer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+
+  font-size: 1000%;
+  font-weight: bold;
+  color: #FFF;
+  background: transparent;
+}
+.timeNumber{
+  position: relative;
+  top: 50%;
+
+  transform: translateY(-50%);
+  animation: zoomTimer 1s 0s ease;
+  border-radius: 50%;
+}
+@keyframes zoomTimer{
+  0%   {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50%) scale(4);
+    opacity: 0;
+  }
+}
+
+
+#camdemo{
+  height: 100% !important;
+  width: 100% !important;
+}
+#camdemo video{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+
+  /* transform: rotateY(180deg); */
+}
+#result{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+}
+#result div{
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  color: #FF00AD;
+  font-size: 500%;
+  text-align: center;
+
+  animation: appear 1s ease;
+  transform: scale(.9);
+}
+#result img{
+  position: absolute;
+  width: auto;
+  height: 100%;
+
+  animation: appear 1s ease;
+  transform: scale(.8);
+  border: 4px dashed #FFF;
+  background: transparent;
+}
+#result.final img{
+  height: 50%;
+  width: auto;
+  transform: scale(1);
+  border: none;
+  box-shadow: none;
+}
+
+@keyframes appear {
+  0%{
+    transform: scale(2);
+  }
+  50%{
+    transform: scale(.8);
+  }
+}
+
+div.cover{
+  transition: background .2s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 15;
+
+  background: transparent;
+}
+div.cover.flash{
+  background: #FFF;
+}
+
+section.decor{
+  background: #FFF;
+  text-align: left;
+}
+
+.decor h1{
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  margin: 0px;
+
+  font-size: 120%;
+  background: #FF00AD;
+  color: #ffffff;
+  text-transform: uppercase;
+  z-index: 20;
+  text-align: center;
+}
+
+.decor  .image{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  background: transparent;
+  text-align: center;
+  z-index: 19;
+
+  transform: translate(-50%, -50%);
+}
+.decor iframe{
+  position: relative;
+  width: 30cm;
+  height: 20cm;
+  border: 1px dashed #000;
+  background: transparent;
+  border-radius: 2px;
+}
+
+section.decor .choix{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+
+  text-align: center;
+  z-index: 20;
+  background: transparent;
+}
+section.decor .choix button{
+  position: absolute;
+  bottom: 15px;
+
+  padding: 15px 20px;
+  border: 1px solid white;
+
+  text-transform: uppercase;
+  color: #FFF;
+  font-family: "Museo";
+  font-size: 200%;
+  font-weight: bold;
+}
+button#print{
+  left: 0;
+  background: #2ECC71;
+  border-left-color: transparent;
+}
+#print:active{
+  background: #0d8c43;
+}
+button#cancel{
+  right: 0;
+  background: #E74C3C;
+  border-right-color: transparent;
+}
+#cancel:active{
+  background: #be3122;
+}

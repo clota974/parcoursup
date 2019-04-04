@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Squazzio</title>
+    <script src="../electron-jquery.js" charset="utf-8"></script>
+    <script src="../js/master.js" charset="utf-8"></script>
+    <script src="settings.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="settings.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../themes/squazzio/master.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="dialog">
+      <h4>You won !</h4>
+      <p>
+        You have beated Autobot
+      </p>
+      <button>OK</button>
+    </div>
+    <div class="menu">
+      <a href="../pages/index.html">Acceuil</a>
+    </div>
+    <h1>Paramètres</h1>
+    <table>
+      <tr class="th">
+        <th colspan="2">
+          Volumes
+        </th>
+      </tr>
+      <tr>
+        <td>Musique de fond</td>
+        <td id="fond" data-type="number"></td>
+      </tr>
+      <tr>
+        <td>Volume des interactions (clic, déplacements…)</td>
+        <td id="moves" data-type="number"></td>
+      </tr>
+      <tr>
+        <td>Jukebox</td>
+        <td id="jukebox" data-type="number"></td>
+      </tr>
+      <tr>
+        <th colspan="2">Theme</th>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="select">
+
+            <select id="theme">
+            </select>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">Mon compte</th>
+      </tr>
+      <tr>
+        <td id='account'>???</td>
+        <td><button id='account-btn'>???</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="button" onclick="save();">Sauvegarder</button></td>
+      </tr>
+      <tr>
+        <td colspan="2">MARMAY EVENEMENTS - Squazzio / All rights reserved / Tous droits résérvés</td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Squazzio - Inscription</title>
+    <link rel="stylesheet" href="../../themes/squazzio/master.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="inscription.css" media="screen" title="no title" charset="utf-8">
+    <script src="../../electron-jquery.js" charset="utf-8"></script>
+    <script src="../../js/master.js" charset="utf-8"></script>
+    <script src="inscription.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="dialog">
+      <h4>Erreur</h4>
+      <p>
+        Une erreur est survenue
+      </p>
+      <button>OK</button>
+    </div>
+    <div style="display: none">
+      <audio class="fond" src="../../zik/squazzio.mp3" autoplay volume="0.1"></audio>
+    </div>
+    <div class="menu">
+      <a href="../index.html">Retour</a>
+    </div>
+    <h1>Inscription</h1>
+    <p>
+      Créez-vous un compte Squazzio pour pouvoir jouer en ligne et
+      vous faire des amis Squazzio (appelés Squazzamigo).
+    </p>
+    <form>
+      <div class="input">
+        <label for="">Prénom</label><span>Ne sera pas pas affiché</span>
+        <input type="text" name="prenom" value="">
+      </div>
+      <div class="input">
+        <label for="">Nom</label><span>Ne sera pas pas affiché</span>
+        <input type="text" name="nom" value="" required>
+      </div>
+      <div class="input">
+        <label for="">Date de naissance</label><span>Ne sera pas pas affiché</span>
+        <input type="date" name="naissance" value="" required>
+      </div>
+      <div class="input">
+        <label for="">Email</label><span>Ne sera pas pas affiché</span><span>Utilisé pour vous contacter</span>
+        <input type="email" name="email" value="" required>
+      </div>
+      <hr/>
+      <div class="input">
+        <label for="">Pseudo</label><span>Public et unique, il vous identifie. Il commence par un @</span><span id="pseudo_dis" class="ok">Pseudo disponible</span>
+        <input type="text" name="pseudo" class="pseudo" id="pseudo" min="3" value="" required>
+      </div>
+      <div class="input pswd">
+        <label for="">Mot de passe</label><span>Secret, il sera nécessaire pour se connecter</span><span id="pswd_chars" class="alert">8 caractères minimum</span>
+        <input type="password" name="pswd" id="pswd" value="" min="8" required>
+      </div>
+      <div class="input pswd">
+        <label for="">Répeter le mot de passe</label><span>Ré-écrivez votre mot de passe pour le confirmer</span><span id="pswd_conf" class="ok">Vos mots de passe correspondent</span>
+        <input type="password" name="pswd2" id="pswd2" value="">
+      </div>
+      <button type="button" id="button">S'inscrire</button>
+    </form>
+  </body>
+</html>

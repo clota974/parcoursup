@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Header>
+  <RequesterCredentials xmlns="urn:ebay:api:PayPalAPI" xsi:type="ebl:CustomSecurityHeaderType">
+  <Credentials xmlns="urn:ebay:apis:eBLBaseComponents" xsi:type="ebl:UserIdPasswordType">
+    <Username>test-marchant-killian_api1.gmail.com</Username>
+    <Password>RVH5YNH73H2PUQT4</Password>
+    <Signature>AclM2lLB3a8JoIabI-JqGpbMwjg5ADspDxbbVRp35NObiKpMRV8mY2i7</Signature>
+  </Credentials>
+  </RequesterCredentials>
+</SOAP-ENV:Header>
+<Specific-API-Name-Req xmlns="urn:ebay:api:PayPalAPI">
+      <Specific-API-Name-Request>
+        <Version xmlns="urn:ebay:apis:eBLBaseComponents">204.0</Version>
+        <Required-Or-Optional-Fields xs:type="Type">Data</Required-Or-Optional-Fields>
+      </Specific-API-Name-Request>
+    </Specific-API-Name-Req>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

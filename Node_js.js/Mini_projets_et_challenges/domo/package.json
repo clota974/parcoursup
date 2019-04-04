@@ -1,0 +1,22 @@
+{
+  "name": "domo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "run": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "lame": "^1.2.4",
+    "naudiodon": "^2.0.3",
+    "osx-audio": "^1.0.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "socket.io-stream": "^0.9.1",
+    "wav": "^1.0.2"
+  }
+}

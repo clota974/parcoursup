@@ -1,0 +1,29 @@
+<% 
+  requireMod("qrcode");
+%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hid</title>
+  </head>
+  <body>
+    <% 
+    qr = __mods.qrcode;
+    urla = "";
+    
+    const generateQR = async text => {      
+      try {
+        console.log("qr: "+await qr.toDataURL(text));
+      } catch (err) {
+        console.error(err)
+      }
+    }
+
+    echo("hi")
+    generateQR("hello");
+    echo(generateQR("hello"))
+    %>
+    <% echo("yes"); %>
+  </body>
+</html>

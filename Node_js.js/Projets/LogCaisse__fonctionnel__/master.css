@@ -1,0 +1,121 @@
+@font-face {
+  font-family: museo;
+  font-weight: normal;
+  src: url("font300.otf");
+}
+@font-face {
+  font-family: museo;
+  font-weight: bold;
+  src: url("font700.otf");
+}
+
+*{
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  background: #FFF;
+  font-family: "Museo", helvetica, sans-serif, serif;
+  text-align: center;
+}
+
+section{
+  padding: 10px;
+  height: 88%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+h1{
+  padding: 0;
+  margin: 10px;
+
+  font-size: 170%;
+  font-weight: normal;
+}
+table{
+  width: 100%;
+  font-size: 120%;
+  border-collapse: collapse;
+}
+tr:hover{
+  background: rgba(0,20,200,0.2);
+}
+td, th{
+  padding: 7px;
+  border: 2px solid #000;
+}
+th{
+  font-weight: bold;
+}
+tr td:first-child{
+  cursor: pointer;
+  font-weight: bold;
+  color: red;
+}
+tr td:first-child:hover{
+  background: red;
+  color: #FFF;
+}
+tr td:last-child{
+  font-size: 120%;
+  font-weight: bold;
+}
+tr td:last-child:after{
+  content: '€';
+}
+
+form{
+  height: 12%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0,255,252,1)), color-stop(75%, rgba(0,255,131,1)), color-stop(100%, rgba(0,255,131,1))); /* safari4+,chrome */
+}
+input{
+  margin: 10px;
+  margin-top: 25px;
+  padding: 5px 0;
+  font-size: 110%;
+
+}
+input.recette{
+  color: green;
+}
+input.depense{
+  color: red;
+}
+
+button{
+  padding: 10px;
+
+  font-size: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  color: white;
+
+  background: #09A8A6;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+@media print{
+  section{
+    padding: 5px;
+    height: 100%;
+    overflow: visible;
+    font-size: 80%;
+  }
+  form{
+    display: none;
+  }
+  td, th{
+    border-width: 1px;
+  }
+  tr *:first-child{
+    display: none;
+  }
+}

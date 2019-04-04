@@ -1,0 +1,24 @@
+h1{
+  -webkit-filter: saturate(200%);
+}
+div.menu{
+  background: #00F;
+}
+div.menu div:hover{
+  color: #FF4136;
+}
+td div{
+  transition: top 300ms ease, left 300ms ease,
+  transform 200ms ease, border 200ms ease,
+  border-radius 1s ease, background 200ms ease;
+
+  background: #00F;
+  border-color: rgba(255, 255, 255, .5);
+}
+table.kaptur td.movable{
+  background: rgba(0, 50, 255, 0.2);
+}
+td div.adv{
+  background: #FF4136;
+  border-color: rgba(0, 0, 0, .5);
+}

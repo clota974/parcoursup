@@ -1,0 +1,30 @@
+h1{
+  -webkit-filter: saturate(200%);
+}
+div.menu{
+  background: #4ef2c9;
+}
+div.menu div{
+  color: #212121;
+}
+div.dialog:before{
+  background: #4ef2c9;
+}
+div.dialog{
+  background: #B10DC9;
+}
+td div{
+  background: #4ef2c9;
+  border-color: rgba(177, 13, 201, .5);
+}
+table.kaptur td.movable{
+  background: rgba(78, 242, 201, .2);
+}
+td div.adv{
+  background: #B10DC9;
+  border-color: rgba(78, 242, 201, .5);
+}
+table.kaptur.busted td.busted div{
+  background: #0F0;
+  border-color: rgba(78, 242, 201, .5);
+}

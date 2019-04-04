@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="master.css">
+    <script type="text/javascript" src="../electron-jquery.js"></script>
+    <script type="text/javascript" src="kln.js"></script>
+    <script src="bt.js"></script>
+
+    <style>
+        body {
+            font-family: monospace;
+            padding: 20px;
+            font-size: 170%;
+        }
+
+        table{
+            position: relative;
+            border-collapse: collapse;
+            border: 1px solid rgb(65, 65, 65);
+            text-align: left;
+
+            font-size: 60%;
+        }
+        td, th{
+            border: 1px solid rgb(90, 88, 88);
+            padding: 5px;
+        }
+
+        table.analog{
+            float: left;
+        }
+        table.digital{
+            left: 10px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="circle" id="circleQ"></div>
+    <p></p>
+    <table class="analog"></table>
+    <table class="digital"></table>
+</body>
+
+</html>
